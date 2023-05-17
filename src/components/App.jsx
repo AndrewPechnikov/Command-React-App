@@ -1,3 +1,5 @@
+import TestComponent from "./TestComponent";
+
 export const App = () => {
   return (
     <div
@@ -11,6 +13,7 @@ export const App = () => {
       }}
     >
       React homework template
+      <TestComponent />
     </div>
   );
 };
