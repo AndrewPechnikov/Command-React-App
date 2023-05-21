@@ -1,4 +1,4 @@
-// Test conflict
+// Test 2
 export const App = () => {
   return (
     <div
