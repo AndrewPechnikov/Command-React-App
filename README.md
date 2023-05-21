@@ -104,6 +104,7 @@ GitHub.
 
 ![How it works](./assets/how-it-works.png)
 
+
 1. Після кожного пуша у гілку `main` GitHub-репозиторія, запускається спеціальний
    скрипт (GitHub Action) із файлу `.github/workflows/deploy.yml`.
 2. Усі файли репозиторію копіюються на сервер, де проект ініціалізується та
