@@ -6,12 +6,14 @@ import RA2 from './components/RA-2';
 import RA3 from './components/RA-3';
 import RA4 from './components/RA-4';
 
+import poster from '../src/components/RA-1/card-img.jpg';
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RA1
       movie={{
         title: 'Wonder Woman 1984',
-        srs: './components/RA-1/card-img.jpg',
+        src: poster,
         alt: 'Wonder Woman 1984 Poster'
       }}
       btnLink={'#'}
