@@ -1,6 +1,6 @@
-import React from 'react';
+import RA1 from "./RA1";
 
-const RA1 = () => {
-  return <div></div>;
-};
+
+
 export default RA1;
+
