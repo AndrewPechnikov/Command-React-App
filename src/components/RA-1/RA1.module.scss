@@ -1,4 +1,5 @@
-.card {
+.heroCard {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,7 +8,7 @@
     height: 383px;
     padding: 26px 50px;
     border-radius: 5px;
-    background-color: aquamarine;
+    background-image: linear-gradient(180deg, rgba(29, 29, 29, 0) 15.78%, rgba(29, 29, 29, 0.78) 100%);
 
     &__title {
         font-family: 'Roboto';
@@ -37,7 +38,16 @@
             top: -3px;
             background-color: #9c1419;
             border: 1px solid #fff;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
         }
+    }
+
+    &__img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -3;
     }
 }
