@@ -6,9 +6,10 @@ import MainCard from './components/MainCard';
 import RA3 from './components/RA-3';
 import LatestNewsMainBlock from './components/RA-4/LatestNewsMainBlock';
 
+import poster from '../src/components/RA-1/card-img.jpg';
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RA1></RA1>
     <MainCard
        title="The Lion King"
        date = "20 April"
@@ -16,6 +17,15 @@ ReactDOM.createRoot(document.getElementById('root')).render(
        languageUA ="UA"
        languageEN = "EN"
     ></MainCard>
+    <RA1
+      movie={{
+        title: 'Wonder Woman 1984',
+        src: poster,
+        alt: 'Wonder Woman 1984 Poster'
+      }}
+      btnLink={'#'}
+    />
+
     <RA3></RA3>
     <LatestNewsMainBlock 
       title='New American films on the screen of Nizami Cinema Center'
