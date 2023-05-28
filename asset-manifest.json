@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/react-homework-template/static/css/main.aaf0585f.css",
-    "main.js": "/react-homework-template/static/js/main.5c4280a5.js",
+    "main.css": "/react-homework-template/static/css/main.6caa597c.css",
+    "main.js": "/react-homework-template/static/js/main.b03e3a0f.js",
+    "static/media/The_Lion_King.png": "/react-homework-template/static/media/The_Lion_King.a68e6c21475e932377a0.png",
+    "static/media/ra4-background.jpeg": "/react-homework-template/static/media/ra4-background.82bcca4f33d3d61e7972.jpeg",
     "index.html": "/react-homework-template/index.html",
-    "main.aaf0585f.css.map": "/react-homework-template/static/css/main.aaf0585f.css.map",
-    "main.5c4280a5.js.map": "/react-homework-template/static/js/main.5c4280a5.js.map"
+    "main.6caa597c.css.map": "/react-homework-template/static/css/main.6caa597c.css.map",
+    "main.b03e3a0f.js.map": "/react-homework-template/static/js/main.b03e3a0f.js.map"
   },
   "entrypoints": [
-    "static/css/main.aaf0585f.css",
-    "static/js/main.5c4280a5.js"
+    "static/css/main.6caa597c.css",
+    "static/js/main.b03e3a0f.js"
   ]
 }
