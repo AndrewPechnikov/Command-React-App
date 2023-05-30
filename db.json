@@ -1,0 +1,714 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Michele",
+      "lastName": "Vendrame",
+      "birthDate": "10/04/1999",
+      "email": "vendramemichele99@gmail.com",
+      "password": "test",
+      "role": "admin",
+      "reservations": [
+        {
+          "userId": 1,
+          "movieId": 3,
+          "reservedSeats": 40,
+          "date": "tommorow",
+          "time": "4:20 PM",
+          "id": 19
+        },
+        {
+          "userId": 1,
+          "movieId": 4,
+          "reservedSeats": 4,
+          "date": "today",
+          "time": "1:00 PM",
+          "id": 23
+        },
+        {
+          "userId": 1,
+          "movieId": 1,
+          "reservedSeats": 6,
+          "date": "today",
+          "time": "1:00 PM",
+          "id": 24
+        },
+        {
+          "userId": 1,
+          "movieId": 1,
+          "reservedSeats": 3,
+          "date": "tommorow",
+          "time": "10:00 PM",
+          "id": 25
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "firstName": "Angelo",
+      "lastName": "Angelini",
+      "birthDate": "12/23/2007",
+      "email": "angeloangelini@gmail.com",
+      "password": "testtest",
+      "role": "user",
+      "reservations": []
+    },
+    {
+      "id": 3,
+      "firstName": "Mauro",
+      "lastName": "Celentano",
+      "birthDate": "01/04/1965",
+      "email": "maurocelentano@gmail.com",
+      "password": "test2",
+      "role": "user"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Test",
+      "birthDate": "11/1/2020",
+      "email": "email@gmail.com",
+      "password": "12324341234",
+      "role": "user",
+      "id": 4,
+      "reservations": []
+    },
+    {
+      "firstName": "Dario",
+      "lastName": "Dannunzio",
+      "birthDate": "11/1/2020",
+      "email": "dario@gmail.com",
+      "password": "testtest",
+      "role": "user",
+      "id": 5
+    },
+    {
+      "firstName": "Gianfranco",
+      "lastName": "Giuseppino",
+      "birthDate": "5/1/2020",
+      "email": "giuseppe@gmail.com",
+      "password": "testtest",
+      "role": "user",
+      "id": 6
+    },
+    {
+      "firstName": "Luca",
+      "lastName": "Ettore",
+      "birthDate": "12/1/2020",
+      "email": "ettore@gmail.com",
+      "password": "testtest",
+      "role": "user",
+      "id": 7
+    },
+    {
+      "firstName": "Dario",
+      "lastName": "Dannunzio",
+      "birthDate": "11/1/2020",
+      "email": "dario@gmail.com",
+      "password": "testtest",
+      "role": "user",
+      "id": 8
+    },
+    {
+      "firstName": "Gianfranco",
+      "lastName": "Giuseppino",
+      "birthDate": "5/1/2020",
+      "email": "giuseppe@gmail.com",
+      "password": "testtest",
+      "role": "user",
+      "id": 9,
+      "reservations": []
+    },
+    {
+      "firstName": "Luca",
+      "lastName": "Ettore",
+      "birthDate": "12/1/2020",
+      "email": "ettore@gmail.com",
+      "password": "testtest",
+      "role": "user",
+      "id": 10
+    },
+    {
+      "firstName": "Dario",
+      "lastName": "Dannunzio",
+      "birthDate": "11/1/2020",
+      "email": "dario@gmail.com",
+      "password": "testtest",
+      "role": "user",
+      "id": 11
+    },
+    {
+      "firstName": "Gianfranco",
+      "lastName": "Giuseppino",
+      "birthDate": "5/1/2020",
+      "email": "giuseppe@gmail.com",
+      "password": "testtest",
+      "role": "user",
+      "id": 12
+    },
+    {
+      "firstName": "Luca",
+      "lastName": "Ettore",
+      "birthDate": "12/1/2020",
+      "email": "ettore@gmail.com",
+      "password": "testtest",
+      "role": "user",
+      "id": 13
+    },
+    {
+      "movieId": 1,
+      "userId": 3,
+      "reservedSeats": 6,
+      "id": 14
+    },
+    {
+      "firstName": "Lukas",
+      "lastName": "Fischnaller",
+      "birthDate": "2/2/1994",
+      "email": "lukas@gmail.com",
+      "password": "testtest",
+      "role": "user",
+      "id": 15
+    },
+    {
+      "firstName": "adsf",
+      "lastName": "adsf",
+      "birthDate": "10/1/2020",
+      "email": "123",
+      "password": "121212",
+      "role": "user",
+      "id": 16
+    },
+    {
+      "firstName": "asdf",
+      "lastName": "adsf",
+      "birthDate": "3/1/2020",
+      "email": "adsf",
+      "password": "asfasdfasdfasdf",
+      "role": "user",
+      "id": 17
+    },
+    {
+      "firstName": "Carlo",
+      "lastName": "Vendrame",
+      "birthDate": "3/1/2020",
+      "email": "carlo@gmail.com",
+      "password": "test",
+      "role": "user",
+      "id": 18,
+      "reservations": [
+        {
+          "userId": 18,
+          "movieId": 1,
+          "reservedSeats": 2,
+          "date": "tommorow",
+          "time": "10:00 PM",
+          "id": 22
+        }
+      ]
+    },
+    {
+      "firstName": "Lisa",
+      "lastName": "Casagrande",
+      "birthDate": "10/1/2020",
+      "email": "lisa@gmail.com",
+      "password": "test12",
+      "role": "user",
+      "id": 19
+    }
+  ],
+  "movies": [
+    {
+      "id": 1,
+      "imdbId": "tt2386490",
+      "imdbRating": 8.1,
+      "title": "Ad Astra",
+      "poster": "http://image.tmdb.org/t/p/w500/xBHvZcjRiWyobQ9kxBhO6B2dtRI.jpg",
+      "backdrop": "http://image.tmdb.org/t/p/w780/5BwqwxMEjeFtdknRV792Svo0K1v.jpg",
+      "trailer": "https://www.youtube.com/embed/P6AaSMfXHbA",
+      "overview": "The near future, a time when both hope and hardships drive humanity to look to the stars and beyond. While a mysterious phenomenon menaces to destroy life on planet Earth, astronaut Roy McBride undertakes a mission across the immensity of space and its many perils to uncover the truth about a lost expedition that decades before boldly faced emptiness and silence in search of the unknown.",
+      "director": "Dean DeBlois",
+      "cast": [
+        "Jay Baruchel",
+        "Cate Blanchett",
+        "Kristen Wiig",
+        "Gerard Butler",
+        "Jonah Hill"
+      ],
+      "release_date": "2019-09-17",
+      "showing": "02/01/2019",
+      "runtime": 104,
+      "mpaa": "PG"
+    },
+    {
+      "id": 2,
+      "imdbId": "tt0437086",
+      "imdbRating": 6,
+      "title": "Bad Boys for Life",
+      "poster": "http://image.tmdb.org/t/p/original/y95lQLnuNKdPAzw9F9Ab8kJ80c3.jpg",
+      "backdrop": "http://image.tmdb.org/t/p/original/iUspPEAjhUUrLYKntTnKupt3eqV.jpg",
+      "trailer": "https://www.youtube.com/embed/jKCj3XuPG8M",
+      "overview": "Marcus and Mike are forced to confront new threats, career changes, and midlife crises as they join the newly created elite team AMMO of the Miami police department to take down the ruthless Armando Armas, the vicious leader of a Miami drug cartel.",
+      "director": "Robert Rodriguez",
+      "cast": [
+        "Eiza González",
+        "Jennifer Connelly",
+        "Jackie Earle Haley"
+      ],
+      "release_date": "02/05/2019",
+      "showing": "02/05/2019",
+      "runtime": 132,
+      "mpaa": "PG-13"
+    },
+    {
+      "id": 3,
+      "imdbId": "tt6823368",
+      "imdbRating": 7.3,
+      "title": "1917",
+      "poster": "http://image.tmdb.org/t/p/original/AuGiPiGMYMkSosOJ3BQjDEAiwtO.jpg",
+      "backdrop": "http://image.tmdb.org/t/p/original/ds9GKAMhxv5AbprmZ2xCpK8FiEG.jpg",
+      "trailer": "https://www.youtube.com/embed/YqNYrYUiMfg",
+      "overview": "At the height of the First World War, two young British soldiers, Schofield and Blake are given a seemingly impossible mission. In a race against time, they must cross enemy territory and deliver a message that will stop a deadly attack on hundreds of soldiers—Blake's own brother among them.",
+      "director": "M. Night Shyamalan",
+      "cast": [
+        "Samuel L. Jackson",
+        "Anya Taylor-Joy",
+        "Bruce Willis",
+        "Gerard Butler",
+        "James McAvoy"
+      ],
+      "release_date": "01/18/2019",
+      "showing": "01/18/2019",
+      "runtime": 129,
+      "mpaa": "PG-13"
+    },
+    {
+      "id": 4,
+      "imdbId": "tt1477834",
+      "imdbRating": 7.5,
+      "title": "Joker",
+      "poster": "http://image.tmdb.org/t/p/original/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
+      "backdrop": "http://image.tmdb.org/t/p/original/n6bUvigpRFqSwmPp1m2YADdbRBc.jpg",
+      "trailer": "https://www.youtube.com/embed/zAGVQLHvwOY",
+      "overview": "During the 1980s, a failed stand-up comedian is driven insane and turns to a life of crime and chaos in Gotham City while becoming an infamous psychopathic crime figure.",
+      "director": "James Wan",
+      "cast": [
+        "Jason Momoa",
+        "Amber Heard",
+        "Nicole Kidman",
+        "Patrick Wilson",
+        "Willem Dafoe"
+      ],
+      "release_date": "12/21/2018",
+      "showing": "12/21/2018",
+      "runtime": 143,
+      "mpaa": "PG-13"
+    },
+    {
+      "id": 5,
+      "imdbId": "tt5028340",
+      "imdbRating": 7.2,
+      "title": "Terminator: Dark Fate",
+      "poster": "http://image.tmdb.org/t/p/original/vqzNJRH4YyquRiWxCCOH0aXggHI.jpg",
+      "backdrop": "http://image.tmdb.org/t/p/original/riTANvQ8GKmQbgtC1ps3OfkU43A.jpg",
+      "trailer": "https://www.youtube.com/embed/jCyEX6u-Yhs",
+      "overview": "Decades after Sarah Connor prevented Judgment Day, a lethal new Terminator is sent to eliminate the future leader of the resistance. In a fight to save mankind, battle-hardened Sarah Connor teams up with an unexpected ally and an enhanced super soldier to stop the deadliest Terminator yet.",
+      "director": "Rob Marshall",
+      "cast": [
+        "Emily Blunt",
+        "Meryl Streep",
+        "Dick Van Dyke",
+        "Ben Whishaw",
+        "Emily Mortimer"
+      ],
+      "release_date": "12/21/2018",
+      "showing": "12/21/2018",
+      "runtime": 130,
+      "mpaa": "PG"
+    },
+    {
+      "id": 6,
+      "imdbId": "tt6966692",
+      "imdbRating": 8.3,
+      "title": "Ip Man 4: The Finale",
+      "poster": "http://image.tmdb.org/t/p/original/yJdeWaVXa2se9agI6B4mQunVYkB.jpg",
+      "backdrop": "http://image.tmdb.org/t/p/original/ekP6EVxL81lZ4ivcqPsoZ72rY0h.jpg",
+      "trailer": "https://www.youtube.com/embed/otI4pyQjb8w",
+      "overview": "Following the death of his wife, Ip Man travels to San Francisco to ease tensions between the local kung fu masters and his star student, Bruce Lee, while searching for a better future for his son.",
+      "director": "Peter Farrelly",
+      "cast": [
+        "Mahershala Ali",
+        "Viggo Mortensen",
+        "Linda Cardellini"
+      ],
+      "release_date": "11/16/2018",
+      "showing": "11/16/2018",
+      "runtime": 130,
+      "mpaa": "PG-13"
+    },
+    {
+      "id": 7,
+      "imdbId": "tt5848272",
+      "imdbRating": 7.3,
+      "title": "Star Wars: The Rise of Skywalker",
+      "poster": "http://image.tmdb.org/t/p/original/db32LaOibwEliAmSL2jjDF6oDdj.jpg",
+      "backdrop": "http://image.tmdb.org/t/p/original/jOzrELAzFxtMx2I4uDGHOotdfsS.jpg",
+      "trailer": "https://www.youtube.com/embed/8Qn_spdM5Zg",
+      "overview": "The surviving Resistance faces the First Order once again as the journey of Rey, Finn and Poe Dameron continues. With the power and knowledge of generations behind them, the final battle begins.",
+      "director": "Phil Johnston, Rich Moore",
+      "cast": [
+        "Alan Tudyk",
+        "John C. Reilly",
+        "Sarah Silverman"
+      ],
+      "release_date": "11/21/2018",
+      "showing": "11/21/2018",
+      "runtime": 112,
+      "mpaa": "PG"
+    },
+    {
+      "id": 8,
+      "imdbId": "tt5886046",
+      "imdbRating": 6.4,
+      "title": "Jumanji: The Next Level",
+      "poster": "http://image.tmdb.org/t/p/original/jyw8VKYEiM1UDzPB7NsisUgBeJ8.jpg",
+      "backdrop": "http://image.tmdb.org/t/p/original/zTxHf9iIOCqRbxvl8W5QYKrsMLq.jpg",
+      "trailer": "https://www.youtube.com/embed/F6QaLsw8EWY",
+      "overview": "As the gang return to Jumanji to rescue one of their own, they discover that nothing is as they expect. The players will have to brave parts unknown and unexplored in order to escape the world’s most dangerous game.",
+      "director": "Adam Robitel",
+      "cast": [
+        "Deborah Ann Woll",
+        "Taylor Russel"
+      ],
+      "release_date": "01/04/2019",
+      "showing": "01/04/2019",
+      "runtime": 99,
+      "mpaa": "PG-13"
+    }
+  ],
+  "showtimes": [
+    {
+      "movieId": 1,
+      "showtimes": [
+        {
+          "date": "today",
+          "times": [
+            "11:00 AM",
+            "1:00 PM",
+            "4:00 PM",
+            "6:00 PM",
+            "10:00 PM"
+          ]
+        },
+        {
+          "date": "tomorrow",
+          "times": [
+            "6:00 PM",
+            "10:00 PM"
+          ]
+        }
+      ]
+    },
+    {
+      "movieId": 2,
+      "showtimes": [
+        {
+          "date": "today",
+          "times": [
+            "12:45 PM",
+            "4:20 PM",
+            "6:30 PM",
+            "8:00 PM",
+            "10:00 PM"
+          ]
+        }
+      ]
+    },
+    {
+      "movieId": 3,
+      "showtimes": [
+        {
+          "date": "today",
+          "times": [
+            "10:20 AM",
+            "12:00 PM",
+            "1:45 PM",
+            "3:00 PM",
+            "5:30 PM",
+            "6:45 PM"
+          ]
+        },
+        {
+          "date": "tomorrow",
+          "times": [
+            "12:45 PM",
+            "4:20 PM",
+            "6:30 PM",
+            "10:00 PM"
+          ]
+        }
+      ]
+    },
+    {
+      "movieId": 4,
+      "showtimes": [
+        {
+          "date": "today",
+          "times": [
+            "11:00 AM",
+            "1:00 PM",
+            "4:00 PM",
+            "6:00 PM",
+            "10:00 PM"
+          ]
+        }
+      ]
+    },
+    {
+      "movieId": 5,
+      "showtimes": [
+        {
+          "date": "today",
+          "times": [
+            "10:20 AM",
+            "12:00 PM",
+            "1:45 PM",
+            "3:00 PM",
+            "5:30 PM",
+            "6:45 PM"
+          ]
+        },
+        {
+          "date": "tomorrow",
+          "times": [
+            "11:00 AM",
+            "6:00 PM",
+            "10:00 PM"
+          ]
+        }
+      ]
+    },
+    {
+      "movieId": 6,
+      "showtimes": [
+        {
+          "date": "today",
+          "times": [
+            "12:45 PM",
+            "4:20 PM",
+            "6:30 PM",
+            "8:00 PM",
+            "10:00 PM"
+          ]
+        }
+      ]
+    },
+    {
+      "movieId": 7,
+      "showtimes": [
+        {
+          "date": "today",
+          "times": [
+            "10:20 AM",
+            "12:00 PM",
+            "1:45 PM",
+            "3:00 PM",
+            "5:30 PM",
+            "6:45 PM"
+          ]
+        },
+        {
+          "date": "tomorrow",
+          "times": [
+            "1:00 PM",
+            "4:00 PM",
+            "6:00 PM"
+          ]
+        }
+      ]
+    },
+    {
+      "movieId": 8,
+      "showtimes": [
+        {
+          "date": "today",
+          "times": [
+            "11:00 AM",
+            "1:00 PM",
+            "4:00 PM",
+            "6:00 PM",
+            "10:00 PM"
+          ]
+        },
+        {
+          "date": "tomorrow",
+          "times": [
+            "11:00 AM",
+            "1:00 PM",
+            "4:00 PM",
+            "6:00 PM",
+            "10:00 PM"
+          ]
+        }
+      ]
+    }
+  ],
+  "seats": [
+    {
+      "id": 1,
+      "movieId": 1,
+      "available": 9,
+      "assigned": 21
+    },
+    {
+      "id": 2,
+      "movieId": 3,
+      "available": 27,
+      "assigned": 3
+    },
+    {
+      "id": 3,
+      "movieId": 2,
+      "available": 3,
+      "assigned": 27
+    },
+    {
+      "id": 4,
+      "movieId": 4,
+      "available": 10,
+      "assigned": 20
+    },
+    {
+      "id": 5,
+      "movieId": 5,
+      "available": 5,
+      "assigned": 25
+    },
+    {
+      "id": 6,
+      "movieId": 6,
+      "available": 8,
+      "assigned": 22
+    },
+    {
+      "id": 7,
+      "movieId": 7,
+      "available": 9,
+      "assigned": 21
+    },
+    {
+      "id": 8,
+      "movieId": 8,
+      "available": 1,
+      "assigned": 29
+    }
+  ],
+  "reservations": [
+    {
+      "userId": 15,
+      "movieId": 1,
+      "reservedSeats": 3,
+      "date": "today",
+      "time": "1:00 PM",
+      "id": 17
+    },
+    {
+      "userId": 15,
+      "movieId": 4,
+      "reservedSeats": 2,
+      "date": "today",
+      "time": "4:00 PM",
+      "id": 18
+    },
+    {
+      "userId": 1,
+      "movieId": 3,
+      "reservedSeats": 40,
+      "date": "tommorow",
+      "time": "4:20 PM",
+      "id": 19
+    },
+    {
+      "userId": 18,
+      "movieId": 1,
+      "reservedSeats": 2,
+      "date": "tommorow",
+      "time": "10:00 PM",
+      "id": 22
+    },
+    {
+      "userId": 1,
+      "movieId": 4,
+      "reservedSeats": 4,
+      "date": "today",
+      "time": "1:00 PM",
+      "id": 23
+    },
+    {
+      "userId": 1,
+      "movieId": 1,
+      "reservedSeats": 6,
+      "date": "today",
+      "time": "1:00 PM",
+      "id": 24
+    },
+    {
+      "userId": 1,
+      "movieId": 1,
+      "reservedSeats": 3,
+      "date": "tommorow",
+      "time": "10:00 PM",
+      "id": 25
+    },
+    {
+      "userId": 19,
+      "movieId": 2,
+      "reservedSeats": 3,
+      "date": "today",
+      "time": "6:30 PM",
+      "id": 26
+    },
+    {
+      "userId": 1,
+      "movieId": 4,
+      "reservedSeats": 2,
+      "date": "today",
+      "time": "1:00 PM",
+      "id": 27
+    },
+    {
+      "userId": 1,
+      "movieId": 2,
+      "reservedSeats": 3,
+      "date": "today",
+      "time": "4:20 PM",
+      "id": 28
+    },
+    {
+      "userId": 1,
+      "movieId": 4,
+      "reservedSeats": 2,
+      "date": "today",
+      "time": "1:00 PM",
+      "id": 30
+    },
+    {
+      "userId": 1,
+      "movieId": 1,
+      "reservedSeats": 4,
+      "date": "today",
+      "time": "1:00 PM",
+      "id": 31
+    }
+  ],
+  "fedelitycards": [
+    {
+      "id": 1,
+      "userId": 1,
+      "code": "ASHDBSAI2173NSAJK"
+    }
+  ],
+  "bookingsettings": {
+    "maximumAmountBookings": 6,
+    "pricePerTicket": 12
+  }
+}
