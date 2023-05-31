@@ -1,0 +1,9 @@
+.carouselList {
+    max-width: 1512px;
+    overflow: hidden;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    justify-content: center;
+    gap: 46px;
+}
