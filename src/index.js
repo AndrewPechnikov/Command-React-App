@@ -5,13 +5,13 @@ import './glob_style/index.scss';
 // import MainCard from './components/MainCard';
 // import RA3 from './components/RA-3';
 // import LatestNewsMainBlock from './components/RA-4/LatestNewsMainBlock';
-import Carousel from 'components/Carousel/Carousel';
+import Hero from 'components/Hero/Hero';
 
 // import poster from '../src/components/RA-1/card-img.jpg';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Carousel />
+    <Hero />
     {/* <MainCard
       title="The Lion King"
       date="20 April"

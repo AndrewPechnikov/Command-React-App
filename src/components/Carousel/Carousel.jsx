@@ -6,11 +6,12 @@ import HeroCard from 'components/HeroCard';
 import styles from './Carousel.module.scss';
 import cardStyles from '../HeroCard/HeroCard.module.scss';
 
-const Carousel = () => {
+const Carousel = ({ setBackground }) => {
     const [activeCard, setActiveCard] = useState(2);
 
     const comingSoonFilms = listOfFilms.comingSoon;
     // const todayFilms = listOfFilms.today;
+
 
     const handleCardClick = (index) => {
         setActiveCard(index === activeCard ? null : index);
@@ -19,14 +20,15 @@ const Carousel = () => {
 
     return (
         <ul className={styles.carouselList}>
-            {comingSoonFilms.map((filmId, index) => {
+            {comingSoonFilms.map((film, index) => {
                 return (
                     <HeroCard
                         className={`${cardStyles.heroCard} ${index === activeCard ? cardStyles.active : ''}`}
                         key={index}
                         btnLink={'#'}
-                        filmId={filmId}
+                        filmId={film}
                         onClick={() => handleCardClick(index)}
+                        setBackground={setBackground}
                     />
                 );
             })}

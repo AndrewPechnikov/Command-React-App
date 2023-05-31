@@ -3,7 +3,8 @@ import getMovie from 'tools/getMovie';
 
 import styles from './HeroCard.module.scss';
 
-const HeroCard = ({ btnLink, filmId, className, onClick }) => {
+
+const HeroCard = ({ btnLink, filmId, className, onClick, setBackground }) => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
@@ -14,11 +15,16 @@ const HeroCard = ({ btnLink, filmId, className, onClick }) => {
         loadData();
     }, [filmId]);
 
+    const handleCardClick = () => {
+        onClick();
+        setBackground(data.Poster);
+    };
+
     return (
         <li>
             <article
                 className={className}
-                onClick={onClick}
+                onClick={handleCardClick}
             >
                 <img
                     className={styles.heroCard__img}
