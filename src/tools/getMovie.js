@@ -7,11 +7,12 @@ const getMovie = async (id) => {
 
 export default getMovie;
 
-// fetch('http://www.omdbapi.com/?t=avatar&apikey=aa99210f')
-//         .then((response) => response.json())
-//         .then((data) => {
-//             setData(data);
-//         })
-//         .catch((err) => {
-//             console.log(err.message);
-//         });
+// const getMovie2 = async () => {
+//     const link = 'https://api.themoviedb.org/3/movie/?api_key=b3abe3f6a7fb23a499595ed6e1cbd087';
+//     const response = await fetch(link);
+//     const data = await response.json();
+//     console.log(data);
+//     return data;
+// };
+
+// getMovie2();
