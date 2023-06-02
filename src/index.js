@@ -6,11 +6,13 @@ import './glob_style/index.scss';
 // import RA3 from './components/RA-3';
 // import LatestNewsMainBlock from './components/RA-4/LatestNewsMainBlock';
 import Hero from 'components/Hero/Hero';
+import Header from 'components/Header/Header';
 
 // import poster from '../src/components/RA-1/card-img.jpg';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <Header />
     <Hero />
     {/* <MainCard
       title="The Lion King"
