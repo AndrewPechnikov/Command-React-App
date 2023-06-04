@@ -1,37 +1,45 @@
-import React, { useState } from 'react';
-
-import listOfFilms from 'tools/listOfFilms';
+import React, { useState, useEffect } from 'react';
+import getMovies from 'tools/getMovie';
 
 import HeroCard from 'components/HeroCard';
 import styles from './Carousel.module.scss';
 import cardStyles from '../HeroCard/HeroCard.module.scss';
 
 const Carousel = ({ setBackground, activeBtn }) => {
-    const [activeCard, setActiveCard] = useState(2);
+    const [activeCard, setActiveCard] = useState(6);
+    const [data, setData] = useState([]);
 
     let movieCategory = '';
 
     if (activeBtn === 'soon') {
-        movieCategory = listOfFilms.comingSoon;
+        movieCategory = 'upcoming';
     } else if (activeBtn === 'today') {
-        movieCategory = listOfFilms.today;
+        movieCategory = `now_playing`;
     }
 
+    useEffect(() => {
+        const loadData = async () => {
+            const movies = await getMovies(movieCategory);
+            setData(movies.results);
+        };
+        loadData();
+    }, [movieCategory, setData]);
+
     const handleCardClick = (index) => {
-        setActiveCard(index === activeCard ? null : index);
+        setActiveCard(index === activeCard ? activeCard : index);
     };
 
     return (
         <ul className={styles.carouselList}>
-            {movieCategory.map((film, index) => {
+            {data.map((film, index) => {
                 return (
                     <HeroCard
                         className={`${cardStyles.heroCard} ${index === activeCard ? cardStyles.active : ''}`}
-                        key={index}
+                        key={film.id}
                         btnLink={'#'}
-                        filmId={film}
                         onClick={() => handleCardClick(index)}
                         setBackground={setBackground}
+                        movie={film}
                     />
                 );
             })}

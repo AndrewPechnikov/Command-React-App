@@ -1,23 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import getMovie from 'tools/getMovie';
-
 import styles from './HeroCard.module.scss';
 
+const imgApi = 'https://image.tmdb.org/t/p/w500/';
 
-const HeroCard = ({ btnLink, filmId, className, onClick, setBackground }) => {
-    const [data, setData] = useState([]);
-
-    useEffect(() => {
-        const loadData = async () => {
-            const movie = await getMovie(filmId);
-            setData(movie);
-        };
-        loadData();
-    }, [filmId]);
-
+const HeroCard = ({ btnLink, className, onClick, setBackground, movie }) => {
     const handleCardClick = () => {
         onClick();
-        setBackground(data.Poster);
+        setBackground(imgApi + movie.poster_path);
     };
 
     return (
@@ -28,10 +16,10 @@ const HeroCard = ({ btnLink, filmId, className, onClick, setBackground }) => {
             >
                 <img
                     className={styles.heroCard__img}
-                    src={data.Poster}
-                    alt={data.Title + ' poster'}
+                    src={imgApi + movie.poster_path}
+                    alt={movie.title + ' poster'}
                 />
-                <h2 className={styles.heroCard__title}>{data.Title}</h2>
+                <h2 className={styles.heroCard__title}>{movie.title}</h2>
                 <a className={styles.heroCard__btn} href={btnLink}>
                     Book Now
                 </a>

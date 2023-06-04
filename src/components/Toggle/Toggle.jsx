@@ -2,21 +2,19 @@ import { useState } from "react";
 import styles from './Toggle.module.scss';
 
 
-const Toggle = ({ toggled, onClick }) => {
+const Toggle = ({ toggled }) => {
     const [isToggled, toggle] = useState(toggled);
 
-    const callback = () => {
+    const buttonClickHandle = () => {
         toggle(!isToggled);
-        onClick(!isToggled);
     };
 
     return (
-        <div>
+        <div className={styles.toggleBtn}>
             <label>
-                <input type="checkbox" defaultChecked={isToggled} onClick={callback} />
+                <input type="checkbox" defaultChecked={isToggled} onClick={buttonClickHandle} />
                 <span />
             </label>
-
         </div>
     );
 };
