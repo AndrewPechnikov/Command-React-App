@@ -5,6 +5,7 @@ import RA1 from './components/RA-1';
 import MainCard from './components/MainCard';
 import RA3 from './components/RA-3';
 import LatestNewsMainBlock from './components/RA-4/LatestNewsMainBlock';
+import Example from './API/exampleComponent'
 
 import poster from '../src/components/RA-1/card-img.jpg';
 
@@ -32,5 +33,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       date='25.06.2022'
       news='US-produced "Independence Day: Revival" at Nizami Cinema Center. "Neighbours. 2 in wartime ”films have been shown. "Independence Day: Revival" is based on a screenplay by Nicholas Wright and directed by Roland Emmerich in the genres of science fiction, adventure and war. Slogan: “We had 20 years to prepare.'
     />
+
+    <Example></Example>
   </React.StrictMode>
+
 );
