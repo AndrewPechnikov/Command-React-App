@@ -1,12 +1,38 @@
+.carousel {
+    overflow: hidden;
+}
+
 .carouselList {
     position: relative;
     z-index: 3;
     max-width: 1720px;
-    overflow: hidden;
     margin: 0 20px;
     display: grid;
     grid-template-columns: repeat(20, auto);
     justify-content: center;
     align-items: end;
     gap: 46px;
+    transition: all 0.3s ease;
+    transform: translateX(941px);
+}
+
+.arrow {
+    position: absolute;
+    top: 80%;
+    z-index: 3;
+    border: solid #fff;
+    border-width: 0 6px 6px 0;
+    display: inline-block;
+    padding: 6px;
+    cursor: pointer;
+
+    &Right {
+        transform: rotate(-45deg);
+        right: 30px;
+    }
+
+    &Left {
+        transform: rotate(135deg);
+        left: 30px;
+    }
 }

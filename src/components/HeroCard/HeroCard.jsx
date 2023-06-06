@@ -5,7 +5,7 @@ const imgApi = 'https://image.tmdb.org/t/p/w500/';
 const HeroCard = ({ btnLink, className, onClick, setBackground, movie }) => {
     const handleCardClick = () => {
         onClick();
-        setBackground(imgApi + movie.poster_path);
+        setBackground(imgApi + movie.backdrop_path);
     };
 
     return (
