@@ -2,7 +2,7 @@ import styles from './HeroCard.module.scss';
 
 const imgApi = 'https://image.tmdb.org/t/p/w500/';
 
-const HeroCard = ({ btnLink, className, onClick, setBackground, movie }) => {
+const HeroCard = ({ btnLink = '#', className, onClick, setBackground, movie }) => {
     const handleCardClick = () => {
         onClick();
         setBackground(imgApi + movie.backdrop_path);

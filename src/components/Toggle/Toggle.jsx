@@ -2,8 +2,8 @@ import { useState } from "react";
 import styles from './Toggle.module.scss';
 
 
-const Toggle = ({ toggled }) => {
-    const [isToggled, toggle] = useState(toggled);
+const Toggle = ({ defaultToggled }) => {
+    const [isToggled, toggle] = useState(defaultToggled);
 
     const buttonClickHandle = () => {
         toggle(!isToggled);
