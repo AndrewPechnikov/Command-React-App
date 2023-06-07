@@ -1,0 +1,29 @@
+.carouselButton {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 0;
+    background-color: transparent;
+    outline: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-size: 15px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    transition: left 0.3s ease;
+
+    &::before {
+        content: '';
+        position: relative;
+        z-index: 3;
+        width: 100px;
+        height: 2px;
+    }
+}
+
+.active {
+    font-size: 20px;
+    left: 30px;
+}

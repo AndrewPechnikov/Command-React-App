@@ -11,7 +11,7 @@ const Header = () => {
                 <a href="#"><img src={logo} alt="Company Logo" /></a>
             </div>
             <Toggle
-                toggled={true}
+                toggled={false}
             />
             <div>
                 <a href="#">

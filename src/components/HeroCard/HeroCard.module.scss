@@ -11,6 +11,7 @@
     background-image: linear-gradient(180deg, rgba(29, 29, 29, 0) 15.78%, rgba(29, 29, 29, 0.78) 100%);
     cursor: pointer;
     transition: all 0.5s ease;
+    overflow: hidden;
 
     &.active {
         width: 290px;
@@ -29,13 +30,14 @@
 
     &__title {
         position: relative;
-        top: 220px;
+        top: 256px;
         font-family: 'Roboto';
         font-weight: 500;
         font-size: 20px;
         line-height: 160%;
         color: #fff;
         transition: top 2s ease;
+        text-align: center;
     }
 
     &__btn {

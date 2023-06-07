@@ -1,28 +1,33 @@
 import React, { useState, useEffect } from 'react';
-import getMovies from 'tools/getMovie';
+import getMovies from 'api/getMovie';
 
 import HeroCard from 'components/HeroCard';
-import styles from './Carousel.module.scss';
 import cardStyles from '../HeroCard/HeroCard.module.scss';
 
+import CarouselButton from './controls/CarouselButton';
+
+import styles from './Carousel.module.scss';
+
 const imgApi = 'https://image.tmdb.org/t/p/w500/';
-let defaultCard = 0;
+const DEFAULT_BUTTON_VALUE = 'soon';
+let defaultCard = 2;
 
 // const carouselListStyles = {
 //     gridTemplateColumns: 'repeat(20, auto)',
 
 // };
 
-const Carousel = ({ setBackground, activeBtn }) => {
+const Carousel = ({ setBackground }) => {
     const [activeCard, setActiveCard] = useState(defaultCard);
     const [data, setData] = useState([]);
     const [translateXValue, setTranslateXValue] = useState(954);
+    const [category, setCategory] = useState(DEFAULT_BUTTON_VALUE);
 
     let movieCategory = '';
 
-    if (activeBtn === 'soon') {
+    if (category === 'soon') {
         movieCategory = 'upcoming';
-    } else if (activeBtn === 'today') {
+    } else if (category === 'today') {
         movieCategory = `now_playing`;
     }
 
@@ -56,12 +61,11 @@ const Carousel = ({ setBackground, activeBtn }) => {
         const newIndex = isLastCard ? 0 : activeCard + 1;
         setActiveCard(newIndex);
         setBackground(`${imgApi}${data[newIndex].backdrop_path}`);
-        setTranslateXValue(translateXValue - 100);
+        setTranslateXValue(translateXValue - 110);
 
         if (isLastCard) {
             setTranslateXValue(954);
         }
-
     };
 
     const goToPrevious = () => {
@@ -69,7 +73,7 @@ const Carousel = ({ setBackground, activeBtn }) => {
         const newIndex = isFirstCard ? data.length - 1 : activeCard - 1;
         setActiveCard(newIndex);
         setBackground(`${imgApi}${data[newIndex].backdrop_path}`);
-        setTranslateXValue(translateXValue + 100);
+        setTranslateXValue(translateXValue + 110);
 
         if (isFirstCard) {
             setTranslateXValue(-874);
@@ -78,9 +82,19 @@ const Carousel = ({ setBackground, activeBtn }) => {
 
     return (
         <div className={styles.carousel}>
-            <i className={`${styles.arrow} ${styles.arrowLeft}`}
-                onClick={() => goToPrevious()}
-            ></i>
+            <div className={styles.carouselWrapper}>
+                <CarouselButton
+                    name='today'
+                    setCategory={setCategory}
+                    category={category}
+                />
+                <CarouselButton
+                    name='soon'
+                    setCategory={setCategory}
+                    category={category}
+                />
+            </div>
+
             <ul className={styles.carouselList}
                 style={{ transform: `translateX(${translateXValue}px)` }}
             >
@@ -97,9 +111,14 @@ const Carousel = ({ setBackground, activeBtn }) => {
                     );
                 })}
             </ul>
-            <i className={`${styles.arrow} ${styles.arrowRight}`}
-                onClick={() => goToNext()}
-            ></i>
+            <div className={styles.arrowWrapper}>
+                <i className={`${styles.arrow} ${styles.arrowLeft}`}
+                    onClick={() => goToPrevious()}
+                ></i>
+                <i className={`${styles.arrow} ${styles.arrowRight}`}
+                    onClick={() => goToNext()}
+                ></i>
+            </div>
         </div >
     );
 };

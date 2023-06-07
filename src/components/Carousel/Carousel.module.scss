@@ -1,10 +1,23 @@
 .carousel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
+    z-index: 3;
+    padding-bottom: 56px;
+
+    &Wrapper {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
 }
 
 .carouselList {
     position: relative;
-    z-index: 3;
     max-width: 1720px;
     margin: 0 20px;
     display: grid;
@@ -14,12 +27,17 @@
     gap: 46px;
     transition: all 0.3s ease;
     transform: translateX(941px);
+    flex-basis: 384px;
+}
+
+.arrowWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 20px;
 }
 
 .arrow {
-    position: absolute;
-    top: 80%;
-    z-index: 3;
     border: solid #fff;
     border-width: 0 6px 6px 0;
     display: inline-block;
@@ -28,11 +46,9 @@
 
     &Right {
         transform: rotate(-45deg);
-        right: 30px;
     }
 
     &Left {
         transform: rotate(135deg);
-        left: 30px;
     }
 }
