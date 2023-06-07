@@ -82,7 +82,7 @@ const Carousel = ({ setBackground }) => {
 
     return (
         <div className={styles.carousel}>
-            <div className={styles.carouselWrapper}>
+            <div className={styles.carousel__wrapper}>
                 <CarouselButton
                     label='today'
                     setCategory={setCategory}

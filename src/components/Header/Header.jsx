@@ -7,7 +7,7 @@ import styles from './Header.module.scss';
 const Header = () => {
     return (
         <header className={styles.header}>
-            <div className={styles.header__logo}>
+            <div>
                 <a href="#"><img src={logo} alt="Company Logo" /></a>
             </div>
             <Toggle
