@@ -10,7 +10,7 @@ import styles from './Carousel.module.scss';
 
 const imgApi = 'https://image.tmdb.org/t/p/w500/';
 const DEFAULT_BUTTON_VALUE = 'soon';
-let defaultCard = 2;
+let defaultCard = 3;
 
 // const carouselListStyles = {
 //     gridTemplateColumns: 'repeat(20, auto)',
@@ -20,7 +20,7 @@ let defaultCard = 2;
 const Carousel = ({ setBackground }) => {
     const [activeCard, setActiveCard] = useState(defaultCard);
     const [data, setData] = useState([]);
-    const [translateXValue, setTranslateXValue] = useState(954);
+    const [translateXValue, setTranslateXValue] = useState(600);
     const [category, setCategory] = useState(DEFAULT_BUTTON_VALUE);
 
     let movieCategory = '';

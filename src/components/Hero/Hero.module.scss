@@ -10,6 +10,7 @@
     background-size: cover;
     background-position: center center;
     transition: all 0.5s ease;
+    overflow: hidden;
 
     &:after {
         content: '';
