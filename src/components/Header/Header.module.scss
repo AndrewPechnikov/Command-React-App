@@ -1,0 +1,14 @@
+.header {
+    position: absolute;
+    z-index: 3;
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+    gap: 10px;
+    top: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    min-height: 36px;
+    max-width: 1316px;
+    width: 100%;
+}

@@ -1,0 +1,50 @@
+.toggleBtn {
+    label {
+        position: relative;
+        display: inline-block;
+        width: 46px;
+        height: 20px;
+    }
+
+    input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    span {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #e5e5e5;
+        transition: 0.3s;
+        border-radius: 30px;
+    }
+
+    span:before {
+        position: absolute;
+        content: "";
+        height: 16px;
+        width: 16px;
+        left: 1.5px;
+        bottom: 2px;
+        background-color: #121212;
+        border-radius: 50%;
+        transition: 0.3s;
+    }
+
+    input:checked + span {
+        background-color: #121212;
+    }
+
+    input:checked + span:before {
+        background-color: #e5e5e5;
+    }
+
+    input:checked + span:before {
+        transform: translateX(29px);
+    }
+}
