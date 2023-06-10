@@ -1,5 +1,4 @@
 import styles from './LatestNewsMainBlock.module.scss';
-import image from 'img/ra4-background.jpeg';
 
 const LatestNewsMainBlock = props => {
 
@@ -10,7 +9,7 @@ const LatestNewsMainBlock = props => {
                 <p className={styles['news-main-block_title__date']}>{props.date}</p>
             </div>
             <p className={styles['news-main-block_text']}>{props.news}</p>
-            <img src={image} alt='Latest news' className={styles['news-main-block_background']} />
+            <img src={props.src} alt='Latest news' className={styles['news-main-block_background']} />
         </div>
     )
 };

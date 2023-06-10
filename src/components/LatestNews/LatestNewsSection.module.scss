@@ -1,0 +1,14 @@
+.news-block {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+
+    &__group {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 46%;
+        padding: 20px 0;
+    }
+
+}
