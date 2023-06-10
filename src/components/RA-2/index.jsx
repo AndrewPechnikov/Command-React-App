@@ -1,10 +1,9 @@
 import styles from './MainCard.module.scss';
-import imageCard from './The_Lion_King.png';
 
 const MainCard = (props) =>{
   return <div>
             <article className={styles.mainCard}>
-            <img className={styles.mainCard__pic} src={imageCard} alt="The Lion King" />
+            <img className={styles.mainCard__pic} src={props.img} alt={props.imgAlt} />
             <div className={styles.mainCard__info}>
                 <p className={styles.mainCard__title}>{props.title}</p>
                 <p className={styles.mainCard__date}>{props.date}</p>

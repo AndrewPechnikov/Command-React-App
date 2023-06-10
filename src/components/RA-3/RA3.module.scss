@@ -1,0 +1,45 @@
+.section{
+    max-width: 1312px;
+    margin: 0 auto;
+    padding-bottom: 90px;
+    
+    &__header{
+        padding-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__headerTitle{
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 24px;
+        color: #383838;
+    }
+
+    &__headerLink{
+        text-decoration:none;
+        color: inherit;
+        display: flex;
+        align-items: center;
+        
+        span{
+            padding-right: 10px;
+            font-weight: 600;
+            line-height: 24px;
+        }
+        img {
+            width: 20px;
+            height: 12px;
+            transition: 0.2s;
+          }
+          &:hover img{
+            transform: translateX(10px);}
+    }
+
+    &__cards{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+}
