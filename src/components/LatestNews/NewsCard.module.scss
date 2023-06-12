@@ -5,6 +5,10 @@
     align-items: center;
     font-family: 'Roboto', sans-serif;
 
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
     &:hover {
         cursor: pointer;
     }

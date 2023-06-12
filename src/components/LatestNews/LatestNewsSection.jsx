@@ -11,13 +11,6 @@ import img_5 from 'img/latest_news_img/img-5.jpeg';
 import style from './LatestNewsSection.module.scss'
 
 const news = [
-    // {
-    //     id: 'news-1',
-    //     date: '25.06.2022',
-    //     title: 'New American films on the screen of Nizami Cinema Center',
-    //     src: `${img_1}`,
-    //     info: 'US-produced "Independence Day: Revival" at Nizami Cinema Center. "Neighbours. 2 in wartime ”films have been shown. "Independence Day: Revival" is based on a screenplay by Nicholas Wright and directed by Roland Emmerich in the genres of science fiction, adventure and war. Slogan: “We had 20 years to prepare.'
-    // },
     {
         id: 'news-2',
         date: '25.03.2022',
