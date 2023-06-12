@@ -10,7 +10,7 @@ import { goToNext, goToPrevious } from './controls/carouselUtils';
 
 import styles from './Carousel.module.scss';
 
-const imgApi = 'https://image.tmdb.org/t/p/w500/';
+const imgApi = 'https://image.tmdb.org/t/p/w1280/';
 const DEFAULT_BUTTON_VALUE = 'soon';
 let defaultCard = 3;
 
